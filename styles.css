@@ -5,6 +5,17 @@
   gap: 0.7em;
   font-size: 2.5rem;
   font-weight: 700;
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.page-title span:last-child {
+  flex: 1 1 auto;
+  text-align: left;
+  letter-spacing: 0.18em;
+  display: inline-block;
+  text-transform: none;
 }
 
 .icon-badge {
@@ -134,18 +145,6 @@ main {
     border-color: var(--accent);
 }
 
-#search-form button {
-    font-size: 2rem;
-    padding: 24px 40px;
-    border: 2px solid #35424a;
-    border-radius: 8px;
-    background: #35424a;
-    color: #fff;
-    cursor: pointer;
-    transition: background 0.2s;
-    min-width: 120px;
-    box-shadow: none;
-}
 
 #search-form button:hover {
     background: var(--accent);
