@@ -88,16 +88,17 @@ main {
     transition: border-color 0.2s;
     min-width: 0;
 }
+/* Smaller, less clumsy search button */
 #search-form button {
-    font-size: 2rem;
-    padding: 24px 40px;
+    font-size: 1.1rem;
+    padding: 12px 20px;
     border: 2px solid #35424a;
     border-radius: 8px;
     background: #35424a;
     color: #fff;
     cursor: pointer;
     transition: background 0.2s;
-    min-width: 120px;
+    min-width: 80px;
     box-shadow: none;
 }
 @media (max-width: 600px) {
