@@ -20,6 +20,41 @@
           />
           <button type="submit">Search</button>
         </form>
+        <div id="spinner-container" style="display: none; margin-top: 32px">
+          <svg id="spinner" width="64" height="64" viewBox="0 0 50 50">
+            <defs>
+              <linearGradient id="spinner-gradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#d4b000" stop-opacity="0.1" />
+                <stop offset="60%" stop-color="#d4b000" stop-opacity="0.7" />
+                <stop offset="100%" stop-color="#d4b000" stop-opacity="1" />
+              </linearGradient>
+              <filter id="spinner-blur" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="1.2" />
+              </filter>
+            </defs>
+            <path
+              d="M25 5
+                a 20 20 0 0 1 0 40
+                a 20 20 0 0 1 0 -40"
+              fill="none"
+              stroke="url(#spinner-gradient)"
+              stroke-width="6"
+              stroke-linecap="round"
+              filter="url(#spinner-blur)"
+            />
+            <path
+              d="M25 5
+                a 20 20 0 0 1 0 40"
+              fill="none"
+              stroke="#d4b000"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-dasharray="50 60"
+              stroke-dashoffset="0"
+            />
+          </svg>
+        </div>
+        <div id="zero-results" style="display:none; margin-top:32px; font-size:1.5rem; color:#888; text-align:center;">There are zero results.</div>
       </div>
     </main>
     <script src="script.js"></script>

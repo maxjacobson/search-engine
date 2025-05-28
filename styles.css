@@ -1,3 +1,17 @@
+/* # Mustard accent color */
+:root {
+  --accent: #d4b000;
+}
+/* Spinner animation */
+#spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -93,7 +107,7 @@ main {
 }
 
 #search-box:focus {
-    border-color: #e8491d;
+    border-color: var(--accent);
 }
 
 #search-form button {
@@ -110,7 +124,8 @@ main {
 }
 
 #search-form button:hover {
-    background: #e8491d;
+    background: var(--accent);
+    color: #222;
 }
 
 .subtitle {
@@ -142,7 +157,8 @@ nav a {
 }
 
 nav a:hover {
-    background: #e8491d;
+    background: var(--accent);
+    color: #222;
 }
 
 .container {
